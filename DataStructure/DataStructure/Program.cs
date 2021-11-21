@@ -10,10 +10,11 @@ namespace DataStructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-createlinked list,2-AddInReverseOrder,3-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-createlinked list,2-AddInReverseOrder,33-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
+
                     case 1:
                         list.Add(56);
                         list.Add(30);
