@@ -67,7 +67,17 @@ namespace DataStructure
             prev.next = newestNode;
             return this.head;
         }
-        public void Display()
+        public Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("linked list is empty");
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
+            public void Display()
         {
             Node temp = head;
             if (temp == null)
