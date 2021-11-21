@@ -10,7 +10,7 @@ namespace DataStructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-create linked list,2-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-createlinked list,2-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -18,6 +18,7 @@ namespace DataStructure
                         list.Add(56);
                         list.Add(30);
                         list.Add(70);
+                        list.Display();
                         break;
                     case 2:
                         flag = false;
