@@ -95,6 +95,22 @@ namespace DataStructure
             NewNode.next = null;
             return head;
         }
+        public int Search(int value)
+        {
+            Node node = this.head;
+            int count = 0;
+            while (node != null)
+            {
+
+                if (node.data == value)
+                {
+                    return count;
+                }
+                node = node.next;
+                count++;
+            }
+            return count;
+        }
         public void Display()
         {
             Node temp = head;
