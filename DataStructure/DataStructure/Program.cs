@@ -10,7 +10,7 @@ namespace DataStructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-createlinked list,2-AddInReverseOrder,3-Insertatparticularposition,4-RemovefirstNode,5-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-createlinked list,2-AddInReverseOrder,3-Insertatparticularposition,4-RemovefirstNode,5-RemovelastNode,6-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -40,8 +40,15 @@ namespace DataStructure
                         list.RemoveFirstNode();
                         list.Display();
                         break;
-
                     case 5:
+                        list.Add(56);
+                        list.Add(30);
+                        list.Add(70);
+                        list.RemoveLastNode();
+                        list.Display();
+                        break;
+
+                    case 6:
                         flag = false;
                         break;
 
