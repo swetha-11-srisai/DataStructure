@@ -25,7 +25,22 @@ namespace DataStructure
             }
             Console.WriteLine("{0} insert into linked list:",node.data);
         }
-         public void Display()
+        public void AddInReverseOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                head = newNode;
+                head.next = temp;
+
+            }
+        }
+        public void Display()
         {
             Node temp = head;
             if (temp == null)
